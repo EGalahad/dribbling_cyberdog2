@@ -1,0 +1,4 @@
+[submodule "cyberdog_motor_sdk"]
+	path = cyberdog_motor_sdk
+	url = git@github.com:MiRoboticsLab/cyberdog_motor_sdk.git
+	branch = cyberdog2

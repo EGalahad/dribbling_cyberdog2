@@ -1,0 +1,14 @@
+package robot_data_types;
+
+struct robot_data_lcmt {
+    float    q[ 12 ];              //12个关节电机角度，弧度制
+    float    qd[ 12 ];             //电机角速度，弧度制
+    float    tau[ 12 ];            //电机扭矩，单位Nm
+    float    quat[ 4 ];            //机身姿态四元数xyzw，右手坐标系
+    float    rpy[ 3 ];             //机身姿态横滚、俯仰、偏航角，弧度制
+    float    acc[ 3 ];             //IMU加速度计输出，单位m/s^2
+    float    omega[ 3 ];           //IMU陀螺仪输出，单位rad/s
+    float    ctrl_topic_interval;  //控制帧接收时间间隔
+    // uint32_t motor_flags[ 12 ];    //电机模式和报错信息，同2.3.1节中的motor_error
+    // int16_t  err_flag;             //错误标志位
+}

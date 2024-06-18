@@ -1,0 +1,7 @@
+package robot_data_types;
+
+struct motor_ctrl_state_lcmt {
+    int64_t    timestamp;
+    int32_t    err_flag;
+    float      ctrl_topic_interval;
+}
